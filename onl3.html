@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kỳ Nghỉ Lễ Đáng Nhớ - 30/4 & 1/5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Tông màu nền dịu mắt */
+        body {
+            background-color: #fdfbf7; /* Màu trắng kem nhạt */
+            color: #4a4a4a;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        /* Banner Header - Gradient nhạt kết hợp tông đỏ vàng */
+        .hero-section {
+            background: linear-gradient(135deg, #fff3cd 0%, #f8d7da 100%); 
+            padding: 70px 0;
+            text-align: center;
+            border-bottom: 5px solid #d32f2f; /* Viền đỏ 30/4 */
+            margin-bottom: 50px;
+        }
+        .hero-title {
+            color: #d32f2f; /* Đỏ cờ */
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+        
+        /* Tiêu đề các phần */
+        .section-title {
+            color: #d32f2f;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            position: relative;
+        }
+        /* Đường gạch ngang màu vàng dưới tiêu đề */
+        .section-title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: #ffc107; /* Vàng sao */
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Khung ảnh (Card) */
+        .card {
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #ffffff;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(211, 47, 47, 0.15); /* Đổ bóng ánh đỏ khi trỏ chuột vào */
+        }
+        .card-img-top {
+            height: 240px;
+            object-fit: cover;
+            border-bottom: 3px solid #ffc107; /* Điểm nhấn viền vàng */
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+        
+        /* Hình ảnh phần Kỷ niệm */
+        .memory-img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 4px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        /* Nút bấm tuỳ chỉnh */
+        .btn-theme {
+            background-color: #d32f2f;
+            color: #fff;
+            font-weight: 600;
+            padding: 10px 30px;
+            border-radius: 30px;
+            border: 2px solid #d32f2f;
+            transition: all 0.3s;
+        }
+        .btn-theme:hover {
+            background-color: #ffc107; /* Đổi sang vàng khi hover */
+            color: #d32f2f;
+            border-color: #ffc107;
+        }
+
+        /* Chân trang */
+        footer {
+            background-color: #d32f2f;
+            color: #ffffff;
+            border-top: 5px solid #ffc107;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+    <header class="hero-section shadow-sm">
+        <div class="container">
+            <h1 class="display-4 hero-title">Nhật Ký Hành Trình</h1>
+            <p class="lead mt-3 text-dark fw-medium">Kỷ niệm chào mừng ngày Giỗ Tổ Hùng Vương & Đại lễ 30/4 - 1/5</p>
+        </div>
+    </header>
+
+    <div class="container flex-grow-1">
+        
+        <section class="mb-5">
+            <h3 class="section-title">Những Nơi Đã Đi</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="card h-100">
+                        <img src="ảnh onl3/anhh2.jpg" class="card-img-top" alt="Cố Đô Huế">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold text-dark">Cố Đô Huế</h5>
+                            <p class="card-text text-muted">Vẻ đẹp cổ kính, trầm mặc và đậm chất lịch sử của Đại Nội.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="card h-100">
+                        <img src="ảnh onl3/ha.jpg" class="card-img-top" alt="Phố Cổ Hội An">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold text-dark">Phố Cổ Hội An</h5>
+                            <p class="card-text text-muted">Bình yên góc phố cổ với những bức tường vàng và đèn lồng rực rỡ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5 bg-white p-4 p-md-5 rounded-4 shadow-sm border" style="border-color: #f8d7da !important;">
+            <h3 class="section-title">Điểm Đến Mơ Ước</h3>
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <img src="ảnh onl3/hcm.jpeg" class="img-fluid rounded-3 shadow" alt="TP. Hồ Chí Minh" style="max-height: 400px; width: 100%; object-fit: cover;">
+                </div>
+                <div class="col-md-5 mt-4 mt-md-0 px-md-4">
+                    <h4 class="fw-bold" style="color: #d32f2f;">Thành phố Hồ Chí Minh</h4>
+                    <p class="text-muted mt-3" style="line-height: 1.8;">
+                        Thành phố mang tên Bác - một đô thị năng động, nhộn nhịp và ngập tràn sức sống. Đây là nơi lý tưởng để trải nghiệm sự giao thoa tuyệt vời giữa nhịp sống hiện đại và những giá trị văn hóa lâu đời. Chắc chắn đây sẽ là điểm đến tiếp theo!
+                    </p>
+                    <button class="btn btn-theme mt-2 shadow-sm">Lên Kế Hoạch Ngay</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h3 class="section-title">Kỷ Niệm Khó Quên</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img src="ảnh onl3/huekyniem.jpg" class="memory-img" alt="Kỷ niệm tại Huế">
+                        <h5 class="fw-bold mt-3 text-dark">Kiến Trúc Lịch Sử</h5>
+                        <p class="text-muted">Phút giây lắng đọng trước vẻ đẹp của các tháp và lăng tẩm cổ kính.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center">
+                        <img src="ảnh onl3/planekyniem.jpg" class="memory-img" alt="Kỷ niệm trên máy bay">
+                        <h5 class="fw-bold mt-3 text-dark">Hành Trình Trên Không</h5>
+                        <p class="text-muted">Bầu trời tuyệt đẹp qua lăng kính cửa sổ máy bay, đánh dấu sự khởi đầu của những chuyến đi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">© 2026 Hành Trình Của Nhóm 08.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
