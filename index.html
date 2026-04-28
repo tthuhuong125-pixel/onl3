@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chào Mừng - Nhật Ký Hành Trình</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Giao diện trang bìa toàn màn hình */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .bg-cover {
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%); /* Màu đỏ chủ đạo */
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .content-box {
+            padding: 40px;
+            border: 2px solid #ffc107; /* Viền vàng điểm nhấn */
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px); /* Hiệu ứng kính mờ */
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        .star-icon {
+            color: #ffc107;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        /* Nút bấm chuyển trang */
+        .btn-enter {
+            background-color: #ffc107; /* Màu vàng */
+            color: #d32f2f; /* Chữ đỏ */
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 12px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            border: none;
+            margin-top: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-enter:hover {
+            background-color: #ffffff;
+            color: #d32f2f;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
+        }
+
+        .sub-text {
+            color: rgba(255, 255, 255, 0.8);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-cover">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="content-box">
+                        <div class="star-icon">★</div>
+                        
+                        <h1 class="display-4 fw-bold mb-3">NHẬT KÝ HÀNH TRÌNH</h1>
+                        <p class="lead mb-2">Chào mừng bạn đến với không gian kỷ niệm</p>
+                        <p class="sub-text small">Dịp lễ Giỗ Tổ Hùng Vương & 30/4 - 1/5</p>
+
+                        <a href="onl3.html" class="btn-enter shadow">Khám Phá Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
